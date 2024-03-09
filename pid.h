@@ -46,7 +46,7 @@ typedef struct pid_type {
     float error[3];  //误差项 0最新 1上一次 2上上次
 
 } pid_type_t;
-extern void pid_init(pid_type_t *pid, uint8_t mode, float Kp, float Ki, float Kd, float max_out, float max_iout);
+extern void pid_init(pid_type_t *pid, uint8_t mode, float Kp, float Ki, float Kd, float max_iout, float max_out);
 extern float pid_calc(pid_type_t *pid, float ref, float set);
 extern void pid_clear(pid_type_t *pid);
 

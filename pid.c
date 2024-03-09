@@ -26,7 +26,7 @@
         }                          \
     }
 
-void pid_init(pid_type_t *pid, uint8_t mode, float Kp, float Ki, float Kd, float max_out, float max_iout) {
+void pid_init(pid_type_t *pid, uint8_t mode, float Kp, float Ki, float Kd, float max_iout, float max_out) {
     if (pid == NULL) {
         return;
     }
